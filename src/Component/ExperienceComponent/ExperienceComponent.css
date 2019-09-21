@@ -1,0 +1,22 @@
+.component__experience--company {
+    padding: .15cm 0;
+    border-bottom: .05cm solid #eee;
+}
+
+.component__experience--company > .component__experience--time, .component__experience--work {
+    font-size: 85%;
+    font-weight: inherit;
+    text-align: justify;
+}
+.component__experience--time > p{
+    width: 5cm;
+}
+.component__experience--work > h4,small, p{
+    font-size: 100%;
+    font-weight: inherit;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.component__experience--work > h4{
+    font-weight: bold;
+}
