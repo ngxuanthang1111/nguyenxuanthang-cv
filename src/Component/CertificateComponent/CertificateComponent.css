@@ -1,0 +1,15 @@
+.component__certificate--content {
+    padding: .15cm 0;
+    border-bottom: .05cm solid #eee;
+}
+
+.component__certificate--content > .component__certificate--time > .component__certificate--work{
+    font-size: 85%;
+    font-weight: inherit;
+    text-align: justify;
+}
+
+.component__certificate--time > p{
+    width: 5cm;
+    padding-right: 2mm;
+}

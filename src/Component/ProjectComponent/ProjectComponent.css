@@ -1,0 +1,43 @@
+.wrapper__component--project{
+    position: relative;
+}
+.component__project--first {
+    padding: 10px 0;
+}
+
+.component__project--title {
+    margin-bottom: 0;
+    font-size: 12pt;
+    line-height: 16pt;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.component__project--time{
+    font-weight: inherit;
+    font-size: 80%;
+}
+.component__project--wrapp-table > .table > tbody > tr > th, td{
+    padding: 3pt;
+    text-align: left;
+    border: 1px solid #999;
+    font-size: 90%;
+}
+
+.component__project--wrapp-table > .table > tbody > tr > th{
+    width: 24%;
+}
+.component__project--wrapp-table > .table > tbody > tr > th:first-letter{
+    text-transform: capitalize;
+}
+.component__project--wrapp-table > .table > tbody > tr > td{
+    width: 100%;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+.component__project--copyright{
+    position: absolute;
+    right: -5mm;
+    margin-top: 20px;
+    font-size: 13px;
+}

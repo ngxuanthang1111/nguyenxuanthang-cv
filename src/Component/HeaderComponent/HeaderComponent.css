@@ -1,0 +1,48 @@
+.wrapper__component--header{
+    width: 100%;
+    padding: 3mm 4mm 0.7cm 4mm;
+}
+.wrapper__component--avatar{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    width: 5cm;
+}
+
+.wrapper__component--infomation{
+    width: 100%;
+}
+
+.wrapper__component--top > h2{
+    font-size: 24pt;
+    line-height: 24pt;
+    font-weight: 700;
+    color: #0e2452;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0.1cm;
+}
+.wrapper__component--top > p{
+    color: #9197a3;
+    font-size: 11pt;
+    line-height: 12pt;
+    margin: 0;
+    padding: 0.1cm;
+}
+.wrapper__component--infomation{
+    padding-left: 1cm;
+}
+.table{
+    margin: 0;
+}
+.table tbody tr td {
+    padding: 0;
+    border-top: none;
+    padding: 0.1cm;
+    width: 0.3cm;
+    font-size: 85%;
+}
+.label{
+    font-weight: 700;
+}

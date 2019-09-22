@@ -1,0 +1,31 @@
+.component__education--content{
+    padding: .15cm 0;
+    border-bottom: .05cm solid #eee;
+}
+.component__education--content > .component__education--time p, .component__education--result ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.component__education--content > .component__education--time > p{
+    width: 5cm;
+    padding-right: 2mm;
+}
+.component__education--content > .component__education--result{
+    width: 100%;
+}
+.component__education--content > .component__education--result > ul > li{
+    width: 80%;
+    text-align: inherit;
+    margin-bottom: 0;
+}
+.component__education--content > .component__education--result , .component__education--time{
+    font-size: 85%;
+    font-weight: inherit;
+    text-align: justify;
+}
+.component__education--result > ul > li:first-child{
+    font-weight: bold;
+}
+ul> li{
+    list-style-type: none;
+}

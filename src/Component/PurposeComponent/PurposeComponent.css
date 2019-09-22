@@ -1,0 +1,16 @@
+.wrapper__component--purpose > h3 {
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 800;
+    border-bottom: 1pt solid #333;
+    margin-bottom: 5pt;
+    padding-bottom: 5px;
+}
+
+.wrapper__component--purpose > p{
+    margin-bottom: 0;
+    text-align: justify;
+    font-size: 80%;
+    font-weight: inherit;
+    padding-right: 2mm;
+}
