@@ -1,28 +1,19 @@
 import React, {Component} from 'react';
+import './ActivesComponent.css';
 
 class ActivesComponent extends Component {
     render() {
         return (
-            <div>
-                <h3>Actives</h3>
-                <div className="d-flex">
-                    <div>
+            <div className= "wrapper__component--actives">
+                <h3 className="component__actives--title">Hoạt Động</h3>
+                <div className="d-flex component__actives--content">
+                    <div className="component__actives--time">
                         <p>start <span>-</span> end</p>
                     </div>
-                    <div>
+                    <div className= "component__actives--work">
                         <h4>tình nguyện</h4>
-                        <small>tình nguyện viên</small>
-                        <p>làm việc chăm chỉ, thật thà, trung thực</p>
-                    </div>
-                </div>
-                <div className="d-flex">
-                    <div>
-                        <p>start <span>-</span> end</p>
-                    </div>
-                    <div>
-                        <h4>club karate</h4>
-                        <small>học viên</small>
-                        <p>làm việc chăm chỉ, thật thà, trung thực</p>
+                        <small>Tình Nguyện Viên</small>
+                        <p>- Làm việc chăm chỉ, thật thà, trung thực</p>
                     </div>
                 </div>
             </div>

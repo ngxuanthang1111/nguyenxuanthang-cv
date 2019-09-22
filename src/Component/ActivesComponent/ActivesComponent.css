@@ -1,24 +1,24 @@
-.component__experience--company {
+.component__actives--content {
     padding: .15cm 0;
     border-bottom: .05cm solid #eee;
 }
 
-.component__experience--company > .component__experience--time, .component__experience--work {
+.component__actives--content > .component__actives--time, .component__actives--work {
     font-size: 85%;
     font-weight: inherit;
     text-align: justify;
 }
-.component__experience--time > p{
+.component__actives--time > p{
     width: 5cm;
     padding-right: 2mm;
 }
-.component__experience--work > h4,small,p{
+.component__actives--work > h4,small, p{
     font-size: 100%;
     font-weight: inherit;
     text-align: justify;
     margin-bottom: 0;
 }
-.component__experience--work > h4{
+.component__actives--work > h4{
     font-weight: bold;
     text-transform: capitalize;
 }
