@@ -1,24 +1,55 @@
 import React, {Component} from 'react';
 import './ExperienceComponent.css';
+import './ExperienceCompnany';
+import ExperienceCompnany from "./ExperienceCompnany";
 
 class ExperienceComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: 'kinh nghiệm làm việc',
+            experiences: [
+                {
+                    startTime: '06/2017',
+                    endTime: '02/2018',
+                    company: 'lung vang',
+                    position: 'internship',
+                    experience: 'content-1'
+                },
+                {
+                    startTime: '03/2018',
+                    endTime: '04/2018',
+                    company: 'co-well asia',
+                    position: 'internship',
+                    experience: 'content-2'
+                },
+                {
+                    startTime: '06/2019',
+                    endTime: '08/2019',
+                    company: 'be advance partner',
+                    position: 'internship',
+                    experience: 'content-2'
+                }
+            ]
+        }
+    }
+
+
     render() {
+        const listExperience = this.state.experiences.map(
+            (data, index) =>
+                <ExperienceCompnany
+                    key={index}
+                    startTime={data.startTime}
+                    endTime={data.endTime}
+                    company={data.company}
+                    position={data.position}
+                    experience={data.experience}/>
+        );
         return (
             <div className="wrapper__component--experience">
                 <h3>kinh nghiệm làm việc</h3>
-                <div className="d-flex component__experience--company">
-                    <div className="component__experience--time">
-                        <p>start <span>-</span> end</p>
-                    </div>
-                    <div className="component__experience--work">
-                        <h4>Công ty Lorem</h4>
-                        <small>Internship</small>
-                        <p>- It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable </p>
-                    </div>
-                </div>
+                {listExperience}
             </div>
         );
     }
