@@ -33,6 +33,9 @@
 .wrapper__component--infomation{
     padding-left: 1cm;
 }
+.wrapper__component--person-infomation > .table > tbody > tr > td{
+    border: none;
+}
 .table{
     margin: 0;
 }
