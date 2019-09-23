@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './ExperienceComponent.css';
-import './ExperienceCompnany';
-import ExperienceCompnany from "./ExperienceCompnany";
+import './ExperienceChild';
+import ExperienceChild from "./ExperienceChild";
 
 class ExperienceComponent extends Component {
     constructor(props) {
@@ -38,7 +38,7 @@ class ExperienceComponent extends Component {
     render() {
         const listExperience = this.state.experiences.map(
             (data, index) =>
-                <ExperienceCompnany
+                <ExperienceChild
                     key={index}
                     startTime={data.startTime}
                     endTime={data.endTime}

@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-const ExperienceCompnany = (props)=> {
+const ExperienceChild = (props)=> {
     return (
         <div className="d-flex component__experience--company">
             <div className="component__experience--time">
@@ -15,4 +15,4 @@ const ExperienceCompnany = (props)=> {
     );
 }
 
-export default ExperienceCompnany;
+export default ExperienceChild;

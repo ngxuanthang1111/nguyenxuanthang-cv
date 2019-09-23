@@ -1,7 +1,7 @@
 .component__skill--content{
-    padding: .15cm 0;
-    border-bottom: .05cm solid #eee;
-}
+     padding: .15cm 0;
+     border-bottom: .05cm solid #eee;
+ }
 .component__skill--content > .component__skill--child > .component__skill--work{
     font-size: 85%;
     font-weight: inherit;

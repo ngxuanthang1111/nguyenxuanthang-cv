@@ -1,50 +1,59 @@
 import React, {Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Table from "reactstrap/es/Table";
 import './ProjectComponent.css';
+import ProjectChild from "./ProjectChild";
+
 class ProjectComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: 'dự án',
+            projects: [
+                {
+                    nameProject: 'project-1',
+                    startTime: '123',
+                    endTime: '5123',
+                    customer: 'abc',
+                    description: 'abcxyz',
+                    quantity: '9',
+                    position: 'dev',
+                    role: 'front-end',
+                    technologies: 'nodejs, reactjs, git, mockAPI,...'
+                },
+                {
+                    nameProject: 'project-2',
+                    startTime: '123',
+                    endTime: '5123',
+                    customer: 'abc',
+                    description: 'abcxyz',
+                    quantity: '9',
+                    position: 'dev',
+                    role: 'front-end',
+                    technologies: 'nodejs, reactjs, git, mockAPI,...'
+                },
+            ]
+        }
+    }
+
     render() {
+        const listProject = this.state.projects.map((data, index) =>
+             <ProjectChild
+                 key={index}
+                 nameProject = {data.nameProject}
+                 startTime = {data.startTime}
+                 endTime={data.endTime}
+                 customer={data.customer}
+                 description={data.description}
+                 quantity={data.quantity}
+                 position={data.position}
+                 role={data.role}
+                 technologies={data.technologies}
+             />
+        );
+
         return (
             <div className="wrapper__component--project">
-                <h3>dự án</h3>
-                <div className="d-flex component__project--first">
-                    <div className="component__project--second">
-                        <h5 className="component__project--title">Project 1</h5>
-                        <p className="component__project--time">
-                            (start<small> - </small>end)
-                        </p>
-                    </div>
-                </div>
-                <div className="d-flex component__project--wrapp-table">
-                    <Table bordered>
-                        <tbody>
-                        <tr>
-                            <th>khách hàng</th>
-                            <td>ABCD</td>
-                        </tr>
-                        <tr>
-                            <th>mô tả dự án</th>
-                            <td>Web Appication giúp mọi người thiết kế bó theo ý riêng</td>
-                        </tr>
-                        <tr>
-                            <th>số lượng thành viên</th>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th>vị trí công việc</th>
-                            <td>Lập trình viên</td>
-                        </tr>
-                        <tr>
-                            <th>vai trò trong dự án</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>công nghệ sử dụng</th>
-                            <td>the Bird</td>
-                        </tr>
-                        </tbody>
-                    </Table>
-                </div>
+                <h3>{this.state.title}</h3>
+                {listProject}
                 <p className="component__project--copyright">
                     <small>@ topcv.vn</small>
                 </p>

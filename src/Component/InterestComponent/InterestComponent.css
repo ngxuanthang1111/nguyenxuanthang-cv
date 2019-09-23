@@ -1,0 +1,16 @@
+.component__interest--content{
+    padding: .15cm 0;
+    border-bottom: .05cm solid #eee;
+}
+.component__interest--content > .component__interest--child > .component__interest--work{
+    font-size: 85%;
+    font-weight: inherit;
+    text-align: justify;
+}
+.component__interest--child > p{
+    width: 5cm;
+    padding-right: 2mm;
+}
+.component__interest--work > p:first-letter{
+    text-transform: capitalize;
+}

@@ -17,20 +17,20 @@
     font-weight: inherit;
     font-size: 80%;
 }
-.component__project--wrapp-table > .table > tbody > tr > th, td{
+.component__project--wrapper-table > .table > tbody > tr > th, td{
     padding: 3pt;
     text-align: left;
     border: 1px solid #999;
     font-size: 90%;
 }
 
-.component__project--wrapp-table > .table > tbody > tr > th{
+.component__project--wrapper-table > .table > tbody > tr > th{
     width: 24%;
 }
-.component__project--wrapp-table > .table > tbody > tr > th:first-letter{
+.component__project--wrapper-table > .table > tbody > tr > th:first-letter{
     text-transform: capitalize;
 }
-.component__project--wrapp-table > .table > tbody > tr > td{
+.component__project--wrapper-table > .table > tbody > tr > td{
     width: 100%;
     border: 1px solid #999;
     box-sizing: border-box;
