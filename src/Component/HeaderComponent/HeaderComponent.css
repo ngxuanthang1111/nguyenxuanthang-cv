@@ -29,6 +29,7 @@
     line-height: 12pt;
     margin: 0;
     padding: 0.1cm;
+    text-transform: capitalize;
 }
 .wrapper__component--infomation{
     padding-left: 1cm;

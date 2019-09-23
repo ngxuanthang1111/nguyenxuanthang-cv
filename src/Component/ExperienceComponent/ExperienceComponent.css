@@ -20,5 +20,8 @@
 }
 .component__experience--work > h4{
     font-weight: bold;
+}
+.component__experience--work > h4, small, p{
     text-transform: capitalize;
+
 }
